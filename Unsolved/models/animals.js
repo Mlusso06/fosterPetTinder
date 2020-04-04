@@ -1,11 +1,16 @@
 var orm = require("../config/orm.js")
 var Pet = {
-    findAll: function(cb){
+    findAllPets: function(cb){
+        orm.joinAll("cats","dogs", function(res){
+            cb(res)
+        })
+    },
+    findAllCats: function(cb){
         orm.findAll("cats", function(res){
             cb(res)
         })
     },
-    findAll: function(cb){
+    findAllDogs: function(cb){
         orm.findAll("dogs", function(res){
             cb(res)
         })
