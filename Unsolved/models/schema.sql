@@ -21,13 +21,13 @@ CREATE TABLE dogs(
     kid_friendly BOOLEAN,
     animal_friendly BOOLEAN,
     PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE petComments(
-    id INT NOT NULL AUTO INCREMENT,
+    id INT NOT NULL AUTO_INCREMENT,
     author VARCHAR(50) NOT NULL,
     comment VARCHAR(255) NOT NULL,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     last_updated TIMESTAMP NOT NULL ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
-)
+);
