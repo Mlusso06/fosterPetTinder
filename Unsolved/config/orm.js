@@ -27,5 +27,13 @@ var orm = {
             if (err) throw err
             cb(result)
         })
+    },
+    joinAll(tableName, tableName2, cb){
+        var queryString = "SELECT * FROM ?? UNION SELECT * FROM ??"
+        connection.query(queryString, [tableName, tableName2], function(err,result){
+            if (err) throw err
+            cb (result)
+        })
     }
+
 }
