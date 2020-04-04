@@ -3,6 +3,13 @@ var pets = require("../models/animals.js");
 
 module.exports = function (app) {
     //Get all examples
+    router.get("/allpets", function (req, res) {
+        pets.findAllPets(function (data) {
+            res.render({
+                pets_data: data
+            })
+        })
+    });
     router.get("/alldogs", function (req, res) {
         pets.findAllDogs(function (data) {
             res.render({
