@@ -19,5 +19,10 @@ var Pet = {
         orm.updateComment("petComments", ["comment", "id"], function(res){
             cb(res)
         })
+    },
+    deleteComment: function(id,cb){
+        orm.deleteComment("petComments",["comment", "id"],function(res){
+            cb(res)
+        })
     }
 }
