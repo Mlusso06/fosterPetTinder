@@ -10,6 +10,7 @@ CREATE TABLE cats(
     cat_age VARCHAR(50),
     kid_friendly BOOLEAN,
     animal_friendly BOOLEAN,
+    cat_photo VARCHAR (500) NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -20,6 +21,7 @@ CREATE TABLE dogs(
     dog_age VARCHAR(50),
     kid_friendly BOOLEAN,
     animal_friendly BOOLEAN,
+    dog_photo VARCHAR (500) NOT NULL,
     PRIMARY KEY (id)
 );
 
