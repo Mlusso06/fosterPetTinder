@@ -1,0 +1,90 @@
+body{
+    background-color: #4ABDAC;
+}
+
+#side-nav{
+    background-color: #f7b733;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px; 
+    height: 250px;
+    width: 250px;
+    
+}
+
+/*FurKeeps Tagline*/
+h5{
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+/*Social Media Buttons Coloring*/
+.btn-floating, .btn-large{
+    background-color: #FC4A1A ;
+}
+
+.social-media{
+    margin-top: 250px;
+}
+
+#main-content{
+    margin-top: 50px;
+    width:1490px;
+    
+}
+
+/*Carousel Image Styling*/
+#carousel{
+   
+    margin-left: 40px;
+    background-color: #F7B733 ;
+    padding: 50px;
+    border-radius: 5px;
+    
+}
+
+img{
+    height: 320px;
+    width:  220px;
+    border-radius: 5px 5px 0 0;
+    
+   
+}
+
+.carousel-item{
+    height: 400px;
+    width: 1200px;
+}
+
+.card{
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,3);
+    border-radius: 5px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+.card-title{
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+
+/*Resource Cards Styling*/
+#resourceCards{
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+#resources{
+    background-color: #f7b733;
+    
+}
+
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: white;
+}
