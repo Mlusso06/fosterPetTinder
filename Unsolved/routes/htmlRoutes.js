@@ -31,8 +31,7 @@ var path = require("path");
 // Routing for the exports
 
 module.exports = function(app){
-
-    app.get('/survey', function(req, res){
+    app.get("/survey", function(req, res){
         res.sendFile(path.join(__dirname, "../public/survey.html"));
 
     });
@@ -41,4 +40,17 @@ module.exports = function(app){
     app.get("*", function(req, res){
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
+
+    app.get("/top10", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/top10.html"))
+    })
+    app.get("/guidelines", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/guidelines.html"))
+    })
+    app.get("/resources", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/resources.html"))
+    })
+    app.get("/animal/:id", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/animalprofile.html"))
+    })
 };
