@@ -1,4 +1,3 @@
-
 //Carousel Function
 $('.owl-carousel.owl-theme').owlCarousel({
     items: 3,
@@ -23,4 +22,7 @@ $('.owl-carousel.owl-theme').owlCarousel({
         }
     }
 });
+
+//Rendering Pet Images to Carousel
+$.get("/api/")
 
