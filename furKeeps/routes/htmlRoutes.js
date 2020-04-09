@@ -37,10 +37,12 @@ module.exports = function(app){
     });
 
     // if no matching route is found default to home
-    app.get("/", function(req, res){
+    app.get("/home", function(req, res){
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
-
+    app.get("/", function(req, res){
+        res.sendFile(path.join(__dirname, "../public/index.html"));
+    });
     app.get("/top10", function(req, res){
         res.sendFile(path.join(__dirname, "../public/top10.html"))
     })
