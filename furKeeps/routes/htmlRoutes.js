@@ -29,7 +29,7 @@
 var path = require("path");
 
 // Routing for the exports
-
+var Pet = require("../models/animals.js")
 module.exports = function(app){
     app.get("/survey", function(req, res){
         res.sendFile(path.join(__dirname, "../public/survey.html"));
@@ -37,7 +37,7 @@ module.exports = function(app){
     });
 
     // if no matching route is found default to home
-    app.get("*", function(req, res){
+    app.get("/", function(req, res){
         res.sendFile(path.join(__dirname, "../public/home.html"));
     });
 
@@ -50,7 +50,13 @@ module.exports = function(app){
     app.get("/resources", function(req, res){
         res.sendFile(path.join(__dirname, "../public/resources.html"))
     })
-    app.get("/animal/:id", function(req, res){
-        res.sendFile(path.join(__dirname, "../public/animalprofile.html"))
+    app.get("/dogs/:id", function(req, res){
+        if (req.params.id){
+            Pet.findOneDog(function(response){
+                console.log(response)
+            }, req.params.id)
+        }
+
+        res.sendFile(path.join(__dirname, "../public/home.html"))
     })
 };

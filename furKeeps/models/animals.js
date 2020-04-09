@@ -1,5 +1,15 @@
 var orm = require("../config/orm.js")
 var Pet = {
+    findOneCat: function(cb, id){
+        orm.findOne("cats", id, function(res){
+            cb(res)
+        })
+    },
+    findOneDog: function(cb, id){
+        orm.findOne("dogs",id, function (res){
+            cb(res)
+        })
+    },
     findAll: function(cb){
         orm.findAll("cats", function(res){
             cb(res)
@@ -26,3 +36,4 @@ var Pet = {
         })
     }
 }
+module.exports = Pet;
