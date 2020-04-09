@@ -1,5 +1,12 @@
-var connection = require('config.json')
+var connection = require('./config.js')
 var orm = {
+    findOne(tableName, value, cb){
+        var queryString = "SELECT * FROM ?? WHERE id = ?";
+        connection.query(queryString,[tableName,value],function(err,result){
+            if (err) throw err;
+            cb(result)
+        })
+    },
     findAll(tableName, cb) {
         var queryString = "SELECT * FROM ??;";
         connection.query(queryString, [tableName], function (err, result) {
@@ -29,3 +36,5 @@ var orm = {
         })
     }
 }
+
+module.exports = orm
