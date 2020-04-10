@@ -24,6 +24,7 @@ app.set("view engine", "handlebars");
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+// require("./routes/commentRoutes.js")(app);
 
 app.listen(PORT, function () {
   // Log (server-side) when our server has started
