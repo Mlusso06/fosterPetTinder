@@ -1,3 +1,11 @@
+//SideNav Init
+$(document).ready(function () {
+    $('.sidenav').sidenav({
+        edge: 'left',
+    });
+});
+
+
 //Carousel Function
 $('.owl-carousel.owl-theme').owlCarousel({
     items: 3,
@@ -10,12 +18,13 @@ $('.owl-carousel.owl-theme').owlCarousel({
     autoplayHoverPause: true,
     nav: true,
     autoHeight: true,
+    responsiveClass: true,
     responsive: {
         0: {
-            items: 1
+            items: 0
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
             items: 3
