@@ -2,29 +2,51 @@
 var pets = require("../models/animals.js");
 
 module.exports = function (app) {
-    //Get all examples
-    app.get("/allpets", function (req, res) {
+    //Get all pets from database
+    app.get("/api/allpets", function (req, res) {
         pets.findAllPets(function (data) {
-            res.render({
+            res.json({
                 pets_data: data
             })
         })
     });
-    app.get("/alldogs", function (req, res) {
-        pets.findAllDogs(function (data) {
-            res.render({
-                pets_data: data
-            })
-        })
-    });
-
-
-    app.get("/allcats", function (req, res) {
+    //get all pets with the pet type cat
+    app.get("/api/allcats", function (req, res) {
         pets.findAllCats(function (data) {
-            res.render({
+            res.json({
                 pets_data: data
             })
         })
+    });
+    //get all pets with the pet type dog
+    app.get("/api/alldogs", function (req, res) {
+        pets.findAllDogs(function (data) {
+            res.json({
+                pets_data: data
+            })
+        })
+    });
+    //get one specific cat by name
+    app.get("/api/onecat/:name", function (req, res) {
+        var condition = req.params.name;
+        console.log('condition', condition);
+
+        pets.findOneCat(condition, function (data) {
+            res.json({
+                pets_data: data
+            });
+        });
+    });
+    //get one specific dog by name
+    app.get("/api/onedog/:name", function (req, res) {
+        var condition = req.params.name;
+        console.log('condition', condition);
+
+        pets.findOneDog(condition, function (data) {
+            res.json({
+                pets_data: data
+            });
+        });
     });
 
 

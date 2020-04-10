@@ -1,15 +1,22 @@
 var connection = require('./config.js')
 var orm = {
-    findOne(tableName, value, cb){
-        var queryString = "SELECT * FROM ?? WHERE id = ?";
-        connection.query(queryString,[tableName,value],function(err,result){
+    findOne: function (tableName, pet_type, value, cb) {
+        var queryString = "SELECT * FROM ?? WHERE pet_type = ? AND pet_name = ?";
+        connection.query(queryString, [tableName, pet_type, value], function (err, result) {
             if (err) throw err;
             cb(result)
         })
     },
-    findAll(tableName, cb) {
+    findAll: function (tableName, cb) {
         var queryString = "SELECT * FROM ??;";
         connection.query(queryString, [tableName], function (err, result) {
+            if (err) throw err;
+            cb(result)
+        })
+    },
+    findAllPetType: function (tableName, pet_type, cb) {
+        var queryString = "SELECT * FROM ?? WHERE pet_type = ?;";
+        connection.query(queryString, [tableName, pet_type], function (err, result) {
             if (err) throw err;
             cb(result)
         })
@@ -28,9 +35,9 @@ var orm = {
             cb(result)
         })
     },
-    deleteComment(tableName,value,cb){
+    deleteComment(tableName, value, cb) {
         var queryString = "DELETE FROM ?? WHERE ?? = ?"
-        connection.query(queryString,[tableName, value],function(err,result){
+        connection.query(queryString, [tableName, value], function (err, result) {
             if (err) throw err
             cb(result)
         })
