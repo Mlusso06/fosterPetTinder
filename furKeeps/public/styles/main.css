@@ -2,8 +2,21 @@ body{
     background-color: #4ABDAC;
 }
 
-#side-nav{
+.sidenav-fixed{
     background-color: #f7b733;
+}
+
+.sidenav-trigger{
+    background-color: #f7b733;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.material-icons{
+    margin-top: 15px;
+    
 }
 
 #logo{
@@ -28,7 +41,7 @@ h5{
 }
 
 .social-media{
-    margin-top: 250px;
+    margin-top: 190px;
 }
 
 #main-content{
@@ -88,3 +101,8 @@ img{
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
     color: white;
 }
+
+#resourceCardTitle{
+   margin-left: 15px;
+}
+

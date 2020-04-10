@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Materialize Compiled and minified CSS -->
+<<<<<<< Updated upstream
     <!-- tab Icon-->
     <link rel="icon" type="image/png" href="/furKeeps/public/images/pawLogo.png">
+=======
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--Owl Carousel-->
@@ -22,18 +26,22 @@
 
 <body>
     <div class="row">
-        <div class="col s3">
+        <div class="col s12 m4 l3">
             <!--Logo and Nav Buttons-->
-            <ul id="side-nav" class="sidenav sidenav-fixed">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
                 <ul>
                     <li><img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
                     <li>
                         <h5>Helping Pets Find Their FurEver Home</h5>
                     </li>
-                    <li><a class="waves-effect waves-light btn-large" href="petsearch.html">Pet Search</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/home">Find Your Perfect Match</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/resources">Resources</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/guidelines">Guidelines</a></li>
+                    <li><a class="waves-effect waves-light btn-large" id="search-btn" href="/petsearch">Pet Search</a>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" id="match-btn" href="/home">Find Your Perfect
+                            Match</a></li>
+                    <li><a class="waves-effect waves-light btn-large" id="resources-btn" href="/resources">Resources</a>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" id="guidelines-btn"
+                            href="/guidelines">Guidelines</a></li>
                 </ul>
 
                 <!--Social Media Icons-->
@@ -43,13 +51,14 @@
                     <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
                 </div>
             </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
         </div>
 
     </div>
 
     <!--Main Content Column-->
     <div class="container">
-        <div class="col s9" id="main-content">
+        <div class="col 9" id="main-content">
             <div class="row" id="carousel">
                 <!--Carousel Wrapper-->
                 <div class="section">
@@ -153,43 +162,54 @@
 
             <!--Resource Cards-->
             <div class="row">
+
                 <div class="section" id="resourceCards">
                     <!--Resources Card 1-->
                     <div class="col s4">
                         <div class="card" id="resources">
+                            <div class="card-image"><img src="images/dogadoptionimage.jpg"></div>
+                            <span class="card-title" id="resourceCardTitle"> Adopting a New Pet?</span>
                             <div class="card-content grey-text text-darken-3">
-                                <span class="card-title">Card Title</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
+                                <p> Because adopting a new pet comes with a lot of change for both pet and pet
+                                    parent,
+                                    we've compiled a checklist to help make the transition as smooth as possible.
+                                </p>
                             </div>
                             <span class="card-action orange darken-4 white-text">
-                                <a class="text-white" href="#">Learn More</a>
+                                <a class="text-white" href="/guidelines">Learn More</a>
                             </span>
                         </div>
                     </div>
                     <!--Resources Card 2-->
                     <div class="col s4">
                         <div class="card" id="resources">
+                            <div class="card-image"><img src="images/catvolunteer.jpg"></div>
+                            <span class="card-title" id="resourceCardTitle">Volunteering with Cats</span>
                             <div class="card-content grey-text text-darken-3">
-                                <span class="card-title">Card Title</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
+                                <p>Learn 9 ways to make your shelter cats happy cats who are ready for their new
+                                    homes.
+                                    <br>
+                                    <br>
+                                </p>
                             </div>
                             <span class="card-action orange darken-4 white-text">
-                                <a class="text-white" href="#">Learn More</a>
+                                <a class="text-white" href="/resources">Learn More</a>
                             </span>
                         </div>
                     </div>
                     <!--Resources Card 3-->
                     <div class="col s4">
                         <div class="card" id="resources">
+                            <div class="card-image"><img src="images/petsafety.jpg"></div>
+                            <span class="card-title" id="resourceCardTitle">5 Pet Safety Tips To Always
+                                Remember</span>
                             <div class="card-content grey-text text-darken-3">
-                                <span class="card-title">Card Title</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
+                                <p>Keeping your adopted or foster pet is the most important thing. Read our article
+                                    about the top 5 things you can do to keep your pet happy and healthy.
+                                </p>
                             </div>
                             <span class="card-action orange darken-4 white-text">
-                                <a class="text-white" href="#">Learn More</a>
+                                <a class="text-white" href="">Learn More</a>
                             </span>
                         </div>
                     </div>
