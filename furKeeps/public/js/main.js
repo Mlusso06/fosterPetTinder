@@ -8,13 +8,13 @@ $(document).ready(function () {
 
 //Carousel Function
 $('.owl-carousel.owl-theme').owlCarousel({
-    items: 3,
-    center: true,
+    items: 20,
+    center: false,
     dots: true,
-    loop: true,
+    loop: false,
     margin: 10,
     autoplay: true,
-    autoplayTimeout: 4000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     nav: true,
     autoHeight: true,
