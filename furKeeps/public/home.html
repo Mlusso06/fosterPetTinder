@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>FurKeeps Pet Match</title>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- tab Icon-->
-    <link rel="icon" type="image/png" href="images/pawLogo.png">
+    <link rel="icon" type="image/png" href="/images/pawLogo.png">
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -13,7 +15,7 @@
     <!-- Materialize Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Custom CSS-->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
@@ -45,21 +47,13 @@
                 </div>
             </ul>
         </div>
-
+        <!-- survey link  -->
     </div>
     <div class="container">
         <div class="row">
 
-            <!-- <div class="col-md-2">
-                <div class="jumbotron mt-3 h-100 d-flex flex-column align-items-start" style="padding: 0.6em 1.6em;">
-                 
-                  
-                    <img class="responsive-img" id="logo" src="../images/furKeep.jpg" height="100" width="100">
- 
-                </div>
-            </div> -->
-            <div style = "text-align: center", class="col-md-8">
-                <div style="background-color: #F7B733" class="jumbotron">
+            <div style="text-align: center" class="col-lg-8 col-md-8 col-sm-8 col-xs-8 col-xs-offset-3">
+                <div style="background-color: #F7B733" class="jumbotron my-auto">
                     <h3><i class="fa fa-paw" aria-hidden="true"></i>FurKeeps Pet Match</h3>
                     <hr>
                     <h4>Answer a few basic questions. </h4>
@@ -79,9 +73,9 @@
 
         </div>
 
-        <footer class="footer">
+        <footer class="footer text-center">
             <div class="container">
-                <p><a href="/api/friends">API Pet List</a> | <a href="">FurKeeps HomePage</a></p>
+                <h5><a href="/api/petMatch">API Pet List</a> | <a href="index.html">FurKeeps HomePage</a></h5>
             </div>
         </footer>
 
