@@ -3,8 +3,8 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
-  user: "Mlusso06",
-  password: "thispasswrd",
+  user: "celeste",
+  password: "1234",
   database: "fosterPets_db"
 });
 

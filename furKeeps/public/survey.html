@@ -260,6 +260,7 @@
                         $("#q10").val()
                     ]
                 };
+                
 
                 // AJAX post the data to the petMatch API.
                 $.post("/api/petMatch", userData, function (data) {
@@ -267,6 +268,7 @@
                     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
+                    $("#match-img").addClass("img-thumbnail")
 
                     // Show the modal with the best match
                     $("#results-modal").modal("toggle");
