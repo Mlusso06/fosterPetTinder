@@ -1,0 +1,61 @@
+#tabmenu{
+    background-color:#F7B733;
+    
+}
+
+.tabs .tab a{
+    color: white;
+    
+}
+
+.tabs .tab a:hover, .tabs .tab a.active{
+    background-color: #FC4A1A;
+    color: white;
+
+}
+
+ h4{
+    text-align: center;
+    font-size: 20px;
+}
+
+h3{
+    text-align: center;
+    font-size: 24px;
+    margin:0;
+}
+
+#main-content{
+    width: 1500px;
+    margin-left: 15px;
+    margin-left:-80px;
+    
+}
+
+.card{
+    padding: 10px;
+    
+    
+}
+.card-content{
+    font-family: 'Lilita One', cursive;
+    padding: 10px;
+    
+}
+
+
+
+img{
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 200px;
+    width: 100px
+    
+}
+
+.card .card-action{
+    background-color:#4ABDAC ;
+    font-size: 15px;
+}

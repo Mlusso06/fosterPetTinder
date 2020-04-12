@@ -1,6 +1,6 @@
 require("dotenv").config();
 var express = require("express");
- 
+
 
 var db = require("./config/config.js");
 
@@ -24,7 +24,7 @@ app.use(express.static('public'))
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
-require("./routes/commentRoutes.js")(app);
+
 
 app.listen(PORT, function () {
   // Log (server-side) when our server has started

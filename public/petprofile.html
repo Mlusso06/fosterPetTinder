@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- tab Icon-->
+    <link rel="icon" type="image/png" href="images/pawLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/petsearch.css">
+    <title>Fur Keeps</title>
+
+    <div class="row">
+        <div class="col s3">
+            <!--Logo and Nav Buttons-->
+            <ul id="side-nav" class="sidenav sidenav-fixed">
+                <ul>
+                    <li>
+                        <img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
+                    <li>
+                        <h5>Helping Pets Find Their FurEver Home</h5>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" href="/">Home</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/home">Find Your Perfect Match</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/resources">Resources</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/guidelines">Guidelines</a></li>
+                </ul>
+
+                <!--Social Media Icons-->
+                <div class="social-media center-align">
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-facebook"></i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-twitter"></i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+
+
+
+        <!--Main Content Column-->
+
+        <div class="col s9" id="main-content">
+            <div id="profile-card" class="row">
+                <div class="card">
+                    <div class="card-image" id="pet-photo-0"></div>
+                </div>
+                <div class="card-content">
+                    <div id="pet-name"></div>
+                    <div id="pet-gender"></div>
+                    <div id="pet-age"></div>
+                    <div id="kid-friendly"></div>
+                    <div id="animal-friendly"></div>
+                </div>
+            </div>
+
+            <div id="comment-card" class="row">
+                <h3>Comments</h3>
+                <hr>
+                <div id="comment-area"></div>
+
+            </div>
+        </div>
+    </div>
+    <!--Container row end-->
+
+
+
+    <!--Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Custom Javascript-->
+    <script src="js/petsearch.js"></script>
+
+
+
+
+    </body>
+
+</html>

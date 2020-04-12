@@ -39,7 +39,7 @@ module.exports = function (app) {
         var totalDifference = 0
 
         for (var i = 0; i < petScore.length; i++) {
-               totalDifference = totalDifference +  parseInt(petScore[i]) ;
+            totalDifference = totalDifference + parseInt(petScore[i]);
         }
         return totalDifference;
     }
@@ -52,45 +52,45 @@ module.exports = function (app) {
         var totalDifference = 0;
         var newPetsArray = []
 
-       totalDifference=  bestPet(petScore)
+        totalDifference = bestPet(petScore)
 
-      animals.findAllPets(function(data){
-        //take total scores from user and substract with db. the least difference is the best match
-        var userScore =  {
-            name: req.body.name,
-            photo: req.body.photo,
-            scores: totalDifference
-        }
-
-          
-            var    newPets = data.map(pet=>{
-
-                     var newTotalDiff = Math.abs(pet.match_score - userScore.scores)
-                     var newPet = {
-                        name: pet.pet_name,
-                        photo: pet.pet_photo,
-                        newTotalDiff: newTotalDiff
-                     }        
-                 
-
-                    return newPet
-
-                })
+        animals.findAllPets(function (data) {
+            //take total scores from user and substract with db. the least difference is the best match
+            var userScore = {
+                name: req.body.name,
+                photo: req.body.photo,
+                scores: totalDifference
+            }
 
 
-               newPets.sort((a, b)=>{
-                   return a.newTotalDiff - b.newTotalDiff
-               })
-                 
-                console.log(newPets)
+            var newPets = data.map(pet => {
 
-             //animals.createAllPets(req.body).then({
-             //       res.json(newPets[0])
-           //  })
+                var newTotalDiff = Math.abs(pet.match_score - userScore.scores)
+                var newPet = {
+                    name: pet.pet_name,
+                    photo: pet.pet_photo,
+                    newTotalDiff: newTotalDiff
+                }
 
-           res.json(newPets[0])
-             
-       })
+
+                return newPet
+
+            })
+
+
+            newPets.sort((a, b) => {
+                return a.newTotalDiff - b.newTotalDiff
+            })
+
+            console.log(newPets)
+
+            //animals.createAllPets(req.body).then({
+            //       res.json(newPets[0])
+            //  })
+
+            res.json(newPets[0])
+
+        })
         //         var bestMatch = {
         //             name: "",
         //             photo: "",
