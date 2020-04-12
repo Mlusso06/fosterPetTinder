@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- tab Icon-->
+    <link rel="icon" type="image/png" href="images/pawLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/petsearch.css">
+    <title>Fur Keeps</title>
+
+    <div class="row">
+        <div class="col s3">
+            <!--Logo and Nav Buttons-->
+            <ul id="side-nav" class="sidenav sidenav-fixed">
+                <ul>
+                    <li>
+                        <img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
+                    <li>
+                        <h5>Helping Pets Find Their FurEver Home</h5>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" href="/">Home</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/home">Find Your Perfect Match</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/resources">Resources</a></li>
+                    <li><a class="waves-effect waves-light btn-large" href="/guidelines">Guidelines</a></li>
+                </ul>
+
+                <!--Social Media Icons-->
+                <div class="social-media center-align">
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-facebook"></i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-twitter"></i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+
+
+
+        <!--Main Content Column-->
+
+        <div class="col s9" id="main-content">
+
+            <!--Tabs-->
+            <ul class="tabs tabs-fixed-width z-depth-2" id="tabmenu">
+                <li class="tab col s3" id="pets"><a class="active" href="#allPets">All Available Pets</a></li>
+                <li class="tab col s3" id="dogs"><a href="#allDogs">Available Dogs</a></li>
+                <li class="tab col s3" id="cats"><a href="#allCats">Available Cats</a></li>
+
+            </ul>
+
+
+
+
+            <!--All Pets Tab Begins-->
+
+            <div id="allPets" class="row">
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-0">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-0"></div>
+                            <div id="pet-gender-0"></div>
+                            <div id="pet-age-0"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-1">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-1"></div>
+                            <div id="pet-gender-1"></div>
+                            <div id="pet-age-1"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-2">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-2"></div>
+                            <div id="pet-gender-2"></div>
+                            <div id="pet-age-2"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-3">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-3"></div>
+                            <div id="pet-gender-3"></div>
+                            <div id="pet-age-3"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-4">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-4"></div>
+                            <div id="pet-gender-4"></div>
+                            <div id="pet-age-4"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-5">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-5"></div>
+                            <div id="pet-gender-5"></div>
+                            <div id="pet-age-5"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-6">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-6"></div>
+                            <div id="pet-gender-6"></div>
+                            <div id="pet-age-6"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-7">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-7"></div>
+                            <div id="pet-gender-7"></div>
+                            <div id="pet-age-7"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-8">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-8"></div>
+                            <div id="pet-gender-8"></div>
+                            <div id="pet-age-8"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-9">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-9"></div>
+                            <div id="pet-gender-9"></div>
+                            <div id="pet-age-9"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-10">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-10"></div>
+                            <div id="pet-gender-10"></div>
+                            <div id="pet-age-10"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-11">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-11"></div>
+                            <div id="pet-gender-11"></div>
+                            <div id="pet-age-11"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-11">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-12">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-12"></div>
+                            <div id="pet-gender-12"></div>
+                            <div id="pet-age-12"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-13">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-13"></div>
+                            <div id="pet-gender-13"></div>
+                            <div id="pet-age-13"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-14">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-14"></div>
+                            <div id="pet-gender-14"></div>
+                            <div id="pet-age-14"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-14">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-15">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-15"></div>
+                            <div id="pet-gender-15"></div>
+                            <div id="pet-age-15"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-15">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-16">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-16"></div>
+                            <div id="pet-gender-16"></div>
+                            <div id="pet-age-16"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-16">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-17">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-17"></div>
+                            <div id="pet-gender-17"></div>
+                            <div id="pet-age-17"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-17">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-18">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-18"></div>
+                            <div id="pet-gender-18"></div>
+                            <div id="pet-age-18"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-18">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="pet-photo-19">
+                        </div>
+                        <div class="card-content">
+                            <div id="pet-name-19"></div>
+                            <div id="pet-gender-19"></div>
+                            <div id="pet-age-19"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="profile-link-19">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Dog Tab Begins-->
+
+            <!--Dog List-->
+            <div id="allDogs" class="row">
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-0">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-0"></div>
+                            <div id="dog-gender-0"></div>
+                            <div id="dog-age-0"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-1">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-1"></div>
+                            <div id="dog-gender-1"></div>
+                            <div id="dog-age-1"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-2">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-2"></div>
+                            <div id="dog-gender-2"></div>
+                            <div id="dog-age-2"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-3">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-3"></div>
+                            <div id="dog-gender-3"></div>
+                            <div id="dog-age-3"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-4">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-4"></div>
+                            <div id="dog-gender-4"></div>
+                            <div id="dog-age-4"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-5">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-5"></div>
+                            <div id="dog-gender-5"></div>
+                            <div id="dog-age-5"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-6">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-6"></div>
+                            <div id="dog-gender-6"></div>
+                            <div id="dog-age-6"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-7">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-7"></div>
+                            <div id="dog-gender-7"></div>
+                            <div id="dog-age-7"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-8">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-8"></div>
+                            <div id="dog-gender-8"></div>
+                            <div id="dog-age-8"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="dog-photo-9">
+                        </div>
+                        <div class="card-content">
+                            <div id="dog-name-9"></div>
+                            <div id="dog-gender-9"></div>
+                            <div id="dog-age-9"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="dog-profile-link-9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Cat Tab begins-->
+            <div id="allCats" class="row">
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-0">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-0"></div>
+                            <div id="cat-gender-0"></div>
+                            <div id="cat-age-0"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-1">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-1"></div>
+                            <div id="cat-gender-1"></div>
+                            <div id="cat-age-1"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-2">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-2"></div>
+                            <div id="cat-gender-2"></div>
+                            <div id="cat-age-2"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-3">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-3"></div>
+                            <div id="cat-gender-3"></div>
+                            <div id="cat-age-3"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-4">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-4"></div>
+                            <div id="cat-gender-4"></div>
+                            <div id="cat-age-4"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-5">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-5"></div>
+                            <div id="cat-gender-5"></div>
+                            <div id="cat-age-5"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-6">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-6"></div>
+                            <div id="cat-gender-6"></div>
+                            <div id="cat-age-6"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-7">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-7"></div>
+                            <div id="cat-gender-7"></div>
+                            <div id="cat-age-7"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-7">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-8">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-8"></div>
+                            <div id="cat-gender-8"></div>
+                            <div id="cat-age-8"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Card-->
+                <div class="col s12 m3">
+                    <div class="card">
+                        <div class="card-image" id="cat-photo-9">
+                        </div>
+                        <div class="card-content">
+                            <div id="cat-name-9"></div>
+                            <div id="cat-gender-9"></div>
+                            <div id="cat-age-9"></div>
+                        </div>
+                        <div class="card-action">
+                            <div id="cat-profile-link-9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--Main Content Row End-->
+    </div>
+    <!--Container row end-->
+    <!--Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Custom Javascript-->
+    <script src="js/petsearch.js"></script>
+
+
+
+
+    </body>
+
+</html>

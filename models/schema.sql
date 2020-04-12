@@ -7,7 +7,7 @@ CREATE TABLE pets(
     id integer not null auto_increment,
     pet_name VARCHAR (255) NOT NULL,
     pet_type VARCHAR (50) NOT NULL,
-    pet_gender VARCHAR(1),
+    pet_gender VARCHAR(50),
     pet_age VARCHAR(50),
     kid_friendly BOOLEAN,
     animal_friendly BOOLEAN,

@@ -49,6 +49,11 @@ module.exports = function (app) {
         });
     });
 
+    //get one specific dog by name
+    app.post("/api/onepet/:name", function (req, res) {
+        var newProfile = req.body;
+
+    });
 
     //Create a new example
     app.post("/api/comments", function (req, res) {

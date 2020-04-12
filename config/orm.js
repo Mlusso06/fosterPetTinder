@@ -8,14 +8,14 @@ var orm = {
         })
     },
     findAll: function (tableName, cb) {
-        var queryString = "SELECT * FROM ??;";
+        var queryString = "SELECT * FROM ?? ORDER BY RAND();";
         connection.query(queryString, [tableName], function (err, result) {
             if (err) throw err;
             cb(result)
         })
     },
     findAllPetType: function (tableName, pet_type, cb) {
-        var queryString = "SELECT * FROM ?? WHERE pet_type = ?;";
+        var queryString = "SELECT * FROM ?? WHERE pet_type = ? ;";
         connection.query(queryString, [tableName, pet_type], function (err, result) {
             if (err) throw err;
             cb(result)
