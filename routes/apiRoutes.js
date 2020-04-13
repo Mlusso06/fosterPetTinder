@@ -51,13 +51,11 @@ module.exports = function (app) {
 
     //get one specific pet by name
     app.get("/api/onepet/:name", function (req, res) {
-        var condition = req.params.name;
-        console.log('condition', condition);
+        var petName = req.params.name;
+        console.log(petName);
 
-        pets.findOneByName(condition, function (data) {
-            res.json({
-                pets_data: data
-            });
+        pets.findOneByName(petName, function (data) {
+            res.json({ pets_data: data });
         });
     });
 

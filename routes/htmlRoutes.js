@@ -37,7 +37,7 @@ module.exports = function (app) {
 
         res.sendFile(path.join(__dirname, "../public/home.html"))
     })
-    app.get("/petprofile/:pet_name", function (req, res) {
+    app.get("/petprofile", function (req, res) {
         res.sendFile(path.join(__dirname, "../public/petprofile.html"))
     })
 };
