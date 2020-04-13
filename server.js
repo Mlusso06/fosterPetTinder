@@ -24,7 +24,11 @@ app.use(express.static('public'))
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+<<<<<<< HEAD
 require("./public/js/survey")(app);
+=======
+require("./public/js/survey")(app); 
+>>>>>>> master
 
 
 app.listen(PORT, function () {

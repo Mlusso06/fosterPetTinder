@@ -22,8 +22,13 @@
 //     });
 //   });
 // };
+<<<<<<< HEAD
 var petMatch = require("../../models/animals.js");
 var animals = require('../../models/animals')
+=======
+var petMatch = require("../../models/animals");
+var animals = require("../../models/animals")
+>>>>>>> master
 
 module.exports = function (app) {
     // my git request for the api
