@@ -7,6 +7,13 @@ var orm = {
             cb(result)
         })
     },
+    findOneByName: function (tableName, pet_name, cb) {
+        var queryString = "SELECT * FROM ?? WHERE pet_name = ?";
+        connection.query(queryString, [tableName, pet_name], function (err, result) {
+            if (err) throw err;
+            cb(result)
+        })
+    },
     findAll: function (tableName, cb) {
         var queryString = "SELECT * FROM ?? ORDER BY RAND();";
         connection.query(queryString, [tableName], function (err, result) {

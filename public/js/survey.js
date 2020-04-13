@@ -22,8 +22,8 @@
 //     });
 //   });
 // };
-var petMatch = require("../models/animals.js");
-var animals = require('../models/animals')
+var petMatch = require("../../models/animals.js");
+var animals = require('../../models/animals')
 
 module.exports = function (app) {
     // my git request for the api

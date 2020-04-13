@@ -16,20 +16,28 @@
     <link rel="stylesheet" href="styles/petsearch.css">
     <title>Fur Keeps</title>
 
+
+</head>
+
+<body>
     <div class="row">
-        <div class="col s3">
+        <div class="col s12 m4 l3">
             <!--Logo and Nav Buttons-->
-            <ul id="side-nav" class="sidenav sidenav-fixed">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
                 <ul>
-                    <li>
-                        <img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
+                    <li><img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
                     <li>
                         <h5>Helping Pets Find Their FurEver Home</h5>
                     </li>
-                    <li><a class="waves-effect waves-light btn-large" href="/">Home</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/home">Find Your Perfect Match</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/resources">Resources</a></li>
-                    <li><a class="waves-effect waves-light btn-large" href="/guidelines">Guidelines</a></li>
+                    <li><a class="waves-effect waves-light btn-large" id="search-btn" href="petsearch.html">Pet
+                            Search</a>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" id="match-btn" href="/home">Find Your Perfect
+                            Match</a></li>
+                    <li><a class="waves-effect waves-light btn-large" id="resources-btn" href="/resources">Resources</a>
+                    </li>
+                    <li><a class="waves-effect waves-light btn-large" id="guidelines-btn"
+                            href="/guidelines">Guidelines</a></li>
                 </ul>
 
                 <!--Social Media Icons-->
@@ -39,16 +47,17 @@
                     <a class="btn-floating btn-large waves-effect waves-light"><i class="fab fa-instagram"></i></a>
                 </div>
             </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
         </div>
 
+    </div>
 
-
-        <!--Main Content Column-->
-
-        <div class="col s9" id="main-content">
+    <!--Main Content Column-->
+    <div class="container">
+        <div class="col 9" id="main-content">
             <div id="profile-card" class="row">
                 <div class="card">
-                    <div class="card-image" id="pet-photo-0"></div>
+                    <div class="card-image" id="pet-photo"></div>
                 </div>
                 <div class="card-content">
                     <div id="pet-name"></div>
@@ -79,11 +88,11 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Custom Javascript-->
-    <script src="js/petsearch.js"></script>
+    <script src="js/petprofile.js"></script>
 
 
 
 
-    </body>
+</body>
 
 </html>
