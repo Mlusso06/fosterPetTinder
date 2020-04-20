@@ -49,10 +49,14 @@ module.exports = function (app) {
         });
     });
 
-    //get one specific dog by name
-    app.post("/api/onepet/:name", function (req, res) {
-        var newProfile = req.body;
+    //get one specific pet by name
+    app.get("/api/onepet/:name", function (req, res) {
+        var petName = req.params.name;
+        console.log(petName);
 
+        pets.findOneByName(petName, function (data) {
+            res.json({ pets_data: data });
+        });
     });
 
     //Create a new example

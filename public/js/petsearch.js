@@ -8,7 +8,7 @@ $(document).ready(function () {
 //Functionality for All Available Pets
 $("#pets").click(function () {
     renderPets();
-    $("#allPets").load("/petsearch.html #allPets");
+
 });
 
 
@@ -17,10 +17,10 @@ function renderPets() {
         for (var i = 0; i < data.pets_data.length; i++) {
 
             //Pet Data
-            $("#pet-photo-" + i).append("<img src=" + data.pets_data[i].pet_photo + ">");
-            $("#pet-name-" + i).append("<h3>" + data.pets_data[i].pet_name + "</h3>");
-            $("#pet-gender-" + i).append("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
-            $("#profile-link-" + i).append("<a href='/api/one" + data.pets_data[1].pet_type + "/" + data.pets_data[i].pet_name + "'>View My Profile</a>");
+            $("#pet-photo-" + i).html("<img src=" + data.pets_data[i].pet_photo + ">");
+            $("#pet-name-" + i).html("<h3>" + data.pets_data[i].pet_name + "</h3>");
+            $("#pet-gender-" + i).html("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
+            $("#profile-link-" + i).html("<a href='/api/onepet/" + data.pets_data[i].pet_name + "'>View My Profile</a>'");
 
         }
     });
@@ -33,7 +33,7 @@ function renderPets() {
 $("#dogs").click(function () {
 
     renderDogs();
-    $("#allDogs").load("/petsearch.html #allDogs");
+
 });
 
 function renderDogs() {
@@ -41,10 +41,10 @@ function renderDogs() {
         for (var i = 0; i < data.pets_data.length; i++) {
 
             //Pet Data
-            $("#dog-photo-" + i).append("<img src=" + data.pets_data[i].pet_photo + ">");
-            $("#dog-name-" + i).append("<h3>" + data.pets_data[i].pet_name + "</h3>");
-            $("#dog-gender-" + i).append("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
-            $("#dog-profile-link-" + i).append("<a href='/api/one" + data.pets_data[1].pet_type + "/" + data.pets_data[i].pet_name + "'>View My Profile</a>");
+            $("#dog-photo-" + i).html("<img src=" + data.pets_data[i].pet_photo + ">");
+            $("#dog-name-" + i).html("<h3>" + data.pets_data[i].pet_name + "</h3>");
+            $("#dog-gender-" + i).html("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
+            $("#dog-profile-link-" + i).html("<a href='/api/onepet/" + data.pets_data[i].pet_name + "'>View My Profile</a>'");
 
         }
     });
@@ -56,7 +56,7 @@ function renderDogs() {
 $("#cats").click(function () {
 
     renderCats();
-    $("#allCats").load("/petsearch.html #allCats");
+
 });
 
 function renderCats() {
@@ -64,10 +64,10 @@ function renderCats() {
         for (var i = 0; i < data.pets_data.length; i++) {
 
             //Pet Data
-            $("#cat-photo-" + i).append("<img src=" + data.pets_data[i].pet_photo + ">");
-            $("#cat-name-" + i).append("<h3>" + data.pets_data[i].pet_name + "</h3>");
-            $("#cat-gender-" + i).append("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
-            $("#cat-profile-link-" + i).append("<a href='/api/one" + data.pets_data[1].pet_type + "/" + data.pets_data[i].pet_name + "'>View My Profile</a>");
+            $("#cat-photo-" + i).html("<img src=" + data.pets_data[i].pet_photo + ">");
+            $("#cat-name-" + i).html("<h3>" + data.pets_data[i].pet_name + "</h3>");
+            $("#cat-gender-" + i).html("<h4>Gender: " + data.pets_data[i].pet_gender + "," + " Age:" + data.pets_data[i].pet_age + "</h4>");
+            $("#cat-profile-link-" + i).html("<a href='/api/onepet/" + data.pets_data[i].pet_name + "'>View My Profile</a>'");
 
         }
     });

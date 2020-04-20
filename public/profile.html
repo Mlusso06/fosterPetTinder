@@ -3,17 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- tab Icon-->
-    <link rel="icon" type="image/png" href="images/pawLogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Materialize Compiled and minified CSS -->
+
+    <!-- tab Icon-->
+
+    <link rel="icon" type="image/png" href="/images/pawLogo.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <!--Custom CSS-->
-    <link rel="stylesheet" href="styles/petsearch.css">
-
+    <link rel="stylesheet" href="/styles/main.css">
     <title>Fur Keeps</title>
 
 
@@ -21,11 +23,11 @@
 
 <body>
     <div class="row">
-        <div class="col s12 m5 l3">
+        <div class="col s12 m4 l3">
             <!--Logo and Nav Buttons-->
             <ul id="slide-out" class="sidenav sidenav-fixed">
                 <ul>
-                    <li><img class="responsive-img" id="logo" src="images/furKeep.jpg"></li>
+                    <li><img class="responsive-img" id="logo" src="/images/furKeep.jpg"></li>
                     <li>
                         <h5>Helping Pets Find Their FurEver Home</h5>
                     </li>
@@ -53,30 +55,33 @@
     </div>
 
     <!--Main Content Column-->
-    <div class="row">
-        <div class="col s9" id="main-content">
-            <div id="profile-card" class="row">
+    <div class="container">
+        <div class="col s12 m7 l9" id="main-content">
+            <!--Profile Card-->
+            <div class="col-md-6">
                 <div class="card">
-                    <div class="card-image" id="pet-photo"></div>
-                </div>
-                <div class="card-content">
-                    <div id="pet-name"></div>
-                    <div id="pet-gender"></div>
-                    <div id="pet-age"></div>
-                    <div id="kid-friendly"></div>
-                    <div id="animal-friendly"></div>
-                </div>
-            </div>
+                    <img class="card-image" id="pet-photo" src="#"></img>
 
-            <div id="comment-card" class="row">
-                <h3>Comments</h3>
-                <hr>
-                <div id="comment-area"></div>
-
+                    <div class="card-content">
+                        <div id="pet-name">Test</div>
+                        <div id="pet-gender">Test</div>
+                        <div id="pet-age">Test</div>
+                        <div id="kid-friendly">Yes</div>
+                        <div id="animal-friendly">No</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--Container row end-->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -88,7 +93,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--Custom Javascript-->
-
+    <script src="/js/petprofile.js"></script>
 
 
 

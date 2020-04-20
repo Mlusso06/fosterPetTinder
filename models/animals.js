@@ -25,6 +25,11 @@ var Pet = {
             cb(res)
         })
     },
+    findOneByName: function (pet_name, cb) {
+        orm.findOneByName("pets", pet_name, function (res) {
+            cb(res)
+        })
+    },
     createComment: function (cb) {
         orm.createComment("petComments", ["author", "comment"], function (res) {
             cb(res)
